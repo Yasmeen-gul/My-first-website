@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin VS padding- visual test</title>
+    <style>
+        body{
+            font-family:Arial;
+            padding:40px;
+            background-color:#f5f5f5;
+        }
+        .container{
+            display: flex;
+            gap:30px;
+            margin-bottom: 40px;
+        }
+        .box{
+            width: 20px;
+            height:100px;
+            background-color: #3498db;
+            color:white;
+            border:3px solid #2980b9;
+            text-align: centre;
+            line-height:100px;
+        }
+        .padding-box{
+            padding: 30px;   /*inside space*/
+        }
+        .margin-box{
+            margin: 30px;/*outside space*/
+
+        }
+        .both-box{
+            padding: 15px;
+            margin: 15px
+        }
+        .visual-guide{
+            background-color:#e74c3c;
+            padding: 10px;
+            margin: 10px0;
+            border: 2px dashed #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margin vs padding-  visual  test </h1>
+    <div class="visual guide">
+        <strong>Visual Guide</strong> Red area= Parent container | Blue boxes = our test boxes
+    </div>
+    <h2>1. Padding Example(INSIDE Space)</h2>
+    <div class="container" style="background-color:#e74c3c;padding:20px">
+<div class="box padding-box"> Padding:30px </div>
+<p>See how the blue box get bigger but stays inside the red container?</p>
+    </div>
+    <h2>3.Both Padding and Margin</h2>
+    <div class="container" style="background-color:#e74c3c;padding:20px">
+<div class="box both-box"> Both:15px each </div>
+<p>Now it has space inside AND outside</p>
+    </div>
+    
+</body>
+</html>
